@@ -23,4 +23,7 @@ public interface UserRepo extends CrudRepository<User, Integer>{
 	
 	//select * from user_master where usert_country='India' and user_age=25 and user_gender='Male'
 	public List<User> findByCountryAndAgeAndGender(String cname,Integer age,String gender);
+	public List<User> findByBetweenAge(String cname,Integer age,String gender);
+	
+	
 }

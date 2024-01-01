@@ -16,12 +16,12 @@ public class DataJpaCreatemethodsApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context= SpringApplication.run(DataJpaCreatemethodsApplication.class, args);
 		UserRepo repo=context.getBean(UserRepo.class);
-		User u1=new User(101,"varun","Male",23,"Australia");
+		User u1=new User(101,"varun","Male",23,"U.S");
 		User u2=new User(102,"ammu","Female",13,"India");
 		User u3=new User(103,"mohan","Male",32,"India");
 		User u4=new User(104,"geethu","Female",29,"U.S");
 		User u5=new User(105,"vamshi","Male",33,"Australia");
-	//	repo.saveAll(Arrays.asList(u1,u2,u3,u4,u5));
+		repo.saveAll(Arrays.asList(u1,u2,u3,u4,u5));
 		
 		
 		//to get Listof country details
